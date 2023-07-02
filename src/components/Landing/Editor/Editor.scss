@@ -1,0 +1,56 @@
+@import '../../../colors.scss';
+
+.container {
+  display: flex;
+  width: 680px;
+  flex-direction: column;
+  border-radius: 1.5%;
+  overflow: hidden;
+  border: 1px solid $border;
+  .titlebar {
+    height: 38px;
+    display: flex;
+    background-color: $titlebar;
+    .window_action_container {
+        display: flex;
+        align-items: center;
+        .action {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-left: 8px;
+            &.close {
+                background-color: #FF5F57;
+            }
+            &.minimise {
+                background-color: #FEBB2E;
+            }
+            &.resize {
+                background-color: #28C840;
+            }
+        }
+    }
+  }
+  .body {
+    display: flex;
+    height: 500px;
+    .toolbar {
+      max-width: 42px;
+      background-color: $toolbar;
+      flex: 1;
+    }
+    .explorer {
+      max-width: 200px;
+      background-color: $explorer;
+      flex: 1;
+    }
+    .workspace {
+      background-color: $workspace;
+      flex: 1;
+    }
+  }
+  .footer {
+    height: 21px;
+    background-color: $footer;
+  }
+}

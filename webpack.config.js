@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, '/src/public', 'index.html'), // to import index.html file inside index.js
+      template: path.join(__dirname, '/public', 'index.html'), // to import index.html file inside index.js
     }),
   ],
   devServer: {

@@ -1,7 +1,8 @@
 import React from 'react';
+import Editor from './Editor';
 
 function Landing() {
-  return (<p>this is landing</p>);
+  return (<Editor />);
 }
 
 export default Landing;
