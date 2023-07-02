@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -11,6 +12,29 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/public', 'index.html'), // to import index.html file inside index.js
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      },
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, '/public', 'CNAME'),
+          to: path.join(__dirname, '/dist'),
+        }
+      ],
+      options: {
+        concurrency: 100,
+      },
     }),
   ],
   devServer: {
