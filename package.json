@@ -1,16 +1,18 @@
 {
-  "name": "news-app",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "React app for showing news article",
+  "description": "My portfolio",
   "main": "index.js",
   "scripts": {
     "test": "npm test",
     "start": "webpack serve --mode development",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lalit3370/news-app.git"
+    "url": "git+https://github.com/lalit3370/portfolio.git"
   },
   "keywords": [
     "react",
@@ -19,9 +21,9 @@
   "author": "lalit kumar singh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lalit3370/news-app/issues"
+    "url": "https://github.com/lalit3370/portfolio/issues"
   },
-  "homepage": "https://github.com/lalit3370/news-app#readme",
+  "homepage": "https://lalit3370.github.io/portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
@@ -45,6 +47,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "2.8.3",
     "sass": "^1.57.1",
