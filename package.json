@@ -7,7 +7,7 @@
     "test": "npm test",
     "start": "webpack serve --mode development",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy" : "gh-pages -d dist",
     "build": "webpack --mode production"
   },
   "repository": {
