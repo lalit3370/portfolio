@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/lalit3370/portfolio/issues"
   },
-  "homepage": "https://lalit3370.github.io/portfolio",
+  "homepage": "https://portfolio.lalitkumar.dev",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
