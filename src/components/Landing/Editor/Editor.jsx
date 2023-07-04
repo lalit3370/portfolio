@@ -13,7 +13,7 @@ function Editor() {
                 </div>
             </div>
             <div className='body'>
-            <Toolbar />
+            <Toolbar activeTool='projects' />
                 <div className='explorer'></div>
                 <div className='workspace'></div>
             </div>

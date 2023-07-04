@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  width: 1024px;
+  width: 768px;
   flex-direction: column;
   border-radius: 10px;
   // overflow: hidden;
@@ -11,7 +11,7 @@
     height: 38px;
     display: flex;
     background-color: $titlebar;
-    border-radius: 10px 10px 0 0;
+    border-radius: 9px 9px 0 0;
     .window_action_container {
         display: flex;
         align-items: center;
@@ -45,8 +45,10 @@
         height: 38px;
         justify-content: center;
         align-items: center;
-        border-left: 2px solid white;
         margin-left: -1px;
+        &.active {
+          border-left: 2px solid white;
+        }
       }
     }
     .explorer {
@@ -62,6 +64,6 @@
   .footer {
     height: 21px;
     background-color: $footer;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 9px 9px;
   }
 }
