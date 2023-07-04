@@ -2,15 +2,16 @@
 
 .container {
   display: flex;
-  width: 680px;
+  width: 1024px;
   flex-direction: column;
-  border-radius: 1.5%;
-  overflow: hidden;
+  border-radius: 10px;
+  // overflow: hidden;
   border: 1px solid $border;
   .titlebar {
     height: 38px;
     display: flex;
     background-color: $titlebar;
+    border-radius: 10px 10px 0 0;
     .window_action_container {
         display: flex;
         align-items: center;
@@ -38,6 +39,15 @@
       max-width: 42px;
       background-color: $toolbar;
       flex: 1;
+      .tool {
+        display: flex;
+        position: relative;
+        height: 38px;
+        justify-content: center;
+        align-items: center;
+        border-left: 2px solid white;
+        margin-left: -1px;
+      }
     }
     .explorer {
       max-width: 200px;
@@ -52,5 +62,6 @@
   .footer {
     height: 21px;
     background-color: $footer;
+    border-radius: 0 0 10px 10px;
   }
 }
