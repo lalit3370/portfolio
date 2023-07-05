@@ -2,33 +2,33 @@
 
 .container {
   display: flex;
-  width: 680px;
+  width: 768px;
   flex-direction: column;
-  border-radius: 1.5%;
-  overflow: hidden;
+  border-radius: 10px;
   border: 1px solid $border;
   .titlebar {
     height: 38px;
     display: flex;
     background-color: $titlebar;
+    border-radius: 9px 9px 0 0;
     .window_action_container {
-        display: flex;
-        align-items: center;
-        .action {
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            margin-left: 8px;
-            &.close {
-                background-color: #FF5F57;
-            }
-            &.minimise {
-                background-color: #FEBB2E;
-            }
-            &.resize {
-                background-color: #28C840;
-            }
+      display: flex;
+      align-items: center;
+      .action {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-left: 8px;
+        &.close {
+          background-color: #ff5f57;
         }
+        &.minimise {
+          background-color: #febb2e;
+        }
+        &.resize {
+          background-color: #28c840;
+        }
+      }
     }
   }
   .body {
@@ -38,6 +38,17 @@
       max-width: 42px;
       background-color: $toolbar;
       flex: 1;
+      .tool {
+        display: flex;
+        position: relative;
+        height: 38px;
+        justify-content: center;
+        align-items: center;
+        margin-left: -1px;
+        &.active {
+          border-left: 2px solid white;
+        }
+      }
     }
     .explorer {
       max-width: 200px;
@@ -52,5 +63,6 @@
   .footer {
     height: 21px;
     background-color: $footer;
+    border-radius: 0 0 9px 9px;
   }
 }
