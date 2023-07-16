@@ -1,5 +1,6 @@
 import React from 'react';
 import Toolbar from './Toolbar';
+import Explorer from './Explorer';
 import './Editor.scss';
 
 function Editor() {
@@ -14,7 +15,7 @@ function Editor() {
       </div>
       <div className="body">
         <Toolbar activeTool="projects" />
-        <div className="explorer"></div>
+        <Explorer />
         <div className="workspace"></div>
       </div>
       <div className="footer"></div>

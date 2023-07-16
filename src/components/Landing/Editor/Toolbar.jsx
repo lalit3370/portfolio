@@ -33,7 +33,7 @@ function Toolbar({ activeTool }) {
       {tools.map((x, y) => (
         <Tool
           iconType={x.iconType}
-          color={activeTool === x.tool ? 'white' : 'grey'}
+          color={activeTool === x.tool ? '#FFF' : '#BBB'}
           size={x?.size}
           isActive={activeTool === x.tool}
           key={y}
